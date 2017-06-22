@@ -9,6 +9,6 @@ RUN tar xfvz /dropbox.tar.gz && rm /dropbox.tar.gz
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME ["/Dropbox"]
+VOLUME ["/root/Dropbox"]
 
 CMD /.dropbox-dist/dropboxd
